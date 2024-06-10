@@ -67,9 +67,9 @@ public abstract class BattleLoc extends Location {
 			}
 
 			if (obstacle.getHealth() < player.getHealthy()) {
-				System.out.println("D��man� yendiniz !");
+				System.out.println("Düşmana yendiniz !");
 				player.setMoney(player.getMoney() + obstacle.getAward());
-				System.out.println("G�ncel Paran�z : " + player.getMoney());
+				System.out.println("Güncel Paranız : " + player.getMoney());
 				obstacle.setHealth(defObsHealth);
 			} else {
 				return false;
